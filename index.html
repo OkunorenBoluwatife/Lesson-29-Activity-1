@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JSON Example with Script</title>
+</head>
+
+<body>
+    <h1>About Tom</h1>
+    <p>Here is Tom's information in JSON format:</p>
+
+    <pre id="jsonData"></pre>
+
+    <script>
+        const person = {
+            "name": "Tom",
+            "age": "8",
+            "favoritecolor": "blue"
+        };
+
+        document.getElementById("jsonData").textContent = JSON.stringify(person, null, 2);
+    </script>
+</body>
+</html>
